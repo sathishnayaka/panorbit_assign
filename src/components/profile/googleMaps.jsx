@@ -12,7 +12,7 @@ class MapContainer extends Component {
         google={this.props.google}
         style={{
           width: "40vw",
-          height: "50vh",
+          height: "45vh",
           borderRadius: "18px",
           marginLeft: "15%",
         }}

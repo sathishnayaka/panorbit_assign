@@ -114,9 +114,8 @@ function Profile() {
             <Grid
               sm={12}
               item
-              mt={12}
               position="absolute"
-              bottom={"2%"}
+              bottom={"9%"}
               right={90}
               display="flex"
             >

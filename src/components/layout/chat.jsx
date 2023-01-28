@@ -7,9 +7,13 @@ import { userDetails } from "@/services/profile";
 import { Grid, Typography } from "@mui/material";
 import SubChat from "./subChat";
 
-// import axios from "axios";
 const Chat = () => {
   const [activeUsers, setActiveUsers] = React.useState([]);
+  const [selectedUser, setSelectedUser] = useState(null);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isChildExpanded, setIsChildExpanded] = useState(false);
+
+  //To get the all users data
   const getDatafromUrl = async () => {
     let res = await userDetails();
     if (localStorage.getItem("user")) {
@@ -24,10 +28,6 @@ const Chat = () => {
     console.log(activeUsers);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  const [selectedUser, setSelectedUser] = useState(null);
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [isChildExpanded, setIsChildExpanded] = useState(false);
 
   function handleUserClick(user) {
     setSelectedUser(user);

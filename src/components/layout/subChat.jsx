@@ -6,7 +6,7 @@ import { useEffect } from "react";
 const useStyles = makeStyles(() => ({
   container: {
     display: "flex",
-    maxHeight: 200,
+    maxHeight: 300,
     backgroundColor: "#fff",
     overflow: "auto",
     "&::-webkit-scrollbar": {
